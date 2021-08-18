@@ -4,6 +4,7 @@ import notifications from '../../assets/JsonData/notification.json'
 import { Link } from 'react-router-dom'
 import user_image from '../../assets/images/user.jpg'
 import user_menu from '../../assets/JsonData/user_menus.json'
+import ThemeMenu from '../thememenu/ThemeMenu'
 
 const curr_user = {
     display_name: 'Magneto',
@@ -63,7 +64,7 @@ const TopNav = () => {
                     />
                 </div>
                 <div className="topnav__right-item">
-                    <Dropdown/>
+                    <ThemeMenu/>
                 </div>
             </div>
         </div>

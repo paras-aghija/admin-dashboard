@@ -29,7 +29,7 @@ const Customers = () => {
     return (
         <div>
             <h2 className="page-header">
-                customers
+                CUSTOMERS
             </h2>
             <div className="row">
                 <div className="col-12">
