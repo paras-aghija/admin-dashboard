@@ -67,7 +67,7 @@ const ThemeMenu = (props) => {
     const menu_ref = useRef(null)
     const menu_toggle_ref = useRef(null)
     clickOutsideRef(menu_ref, menu_toggle_ref)
-    // const setActiveMenu = () => menu_ref.current.classList.add('active')
+    const setActiveMenu = () => menu_ref.current.classList.add('active')
     const closeMenu = () => menu_ref.current.classList.remove('active')
 
     const [currMode, setCurrMode] = useState('light')
@@ -97,7 +97,7 @@ const ThemeMenu = (props) => {
 
     return (
         <div>
-            <button className="dropdown__toggle" ref={menu_toggle_ref}>
+            <button className="dropdown__toggle" ref={menu_toggle_ref} onClick={() => setActiveMenu()}>
                 <i className="bx bx-palette"></i>
             </button>
             <div className="theme-menu" ref={menu_ref}>
